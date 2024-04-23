@@ -10,8 +10,16 @@ class CourierOption extends Login{
     String number;
     bool loop=true;
     while(loop){
-      print("Welcome To DASHBOARD");
-      print('Select One Option \n 1. PickUp \n 2. Coverages \n 3. Fraud Check \n 4. Add Parcel\n 5. End Service');
+      print('------------------------------------------------------------');
+      print("               *** Welcome To DASHBOARD ***");
+      print('                   Select One Option \n'
+          '------------------------------------------------------------\n'
+          '                   1. PickUp \n'
+          '                   2. Coverages \n'
+          '                   3. Fraud Check \n'
+          '                   4. Add Parcel\n'
+          '                   5. End Service');
+      print('------------------------------------------------------------');
       print('\nEnter Your Option');
        number=stdin.readLineSync()!;
       switch(number){

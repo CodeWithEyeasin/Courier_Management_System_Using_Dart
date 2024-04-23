@@ -9,8 +9,14 @@ class PickUp extends CourierOption{
   void pickupservice(){
     String number;
     while(loop){
-      print('\nSelect One Option \n 1. Pickup Request \n 2. Payment Request \n '
-          '3. Pick N Drop Service \n 4. Back to Dashboard\n 5. End Service\n');
+      print('------------------------------------------------------------');
+      print('                   Select One Option \n'
+          '                   1. Pickup Request \n'
+          '                   2. Payment Request \n'
+          '                   3. Pick N Drop Service \n'
+          '                   4. Back to Dashboard\n'
+          '                   5. End Service');
+      print('------------------------------------------------------------');
       print('\nEnter Your Option');
       number=stdin.readLineSync()!;
       switch(number){

@@ -3,11 +3,13 @@ import 'pickup.dart';
 
 class RegularPickUpRequest{
   void pickuprequest() {
-    print('Regular Pickup Request\n');
+    print('\n------------------------------------------------------------');
+    print('               *** Regular Pickup Request ***');
     PickUp pickUp = PickUp();
-    print('Pickup Address:');
+    print('                      Pickup Address:');
+    print('------------------------------------------------------------');
     String address = stdin.readLineSync()!;
-    print('$address \t"Pickup Request Send Successfully"');
+    print('$address \t"*** Pickup Request Send Successfully ***"');
     pickUp.pickupservice();
   }
 }

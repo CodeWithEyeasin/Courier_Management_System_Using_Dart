@@ -11,7 +11,9 @@ class Login{
       loop = false;
     }
     else{
-      print('WARNING Login Unsuccessful, Please Enter Your Right Username & Password');
+      print('\n------------------------------------------------------------');
+      print('               WARNING Login Unsuccessful,\n       Please Enter Your Right Username & Password');
+      print('------------------------------------------------------------');
       sleep(Duration(seconds: 5));
     }
   }

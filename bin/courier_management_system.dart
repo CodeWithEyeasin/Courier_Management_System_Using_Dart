@@ -2,8 +2,10 @@ import 'dart:io';
 import 'courier_option.dart';
 
 void main() {
-  print('      ABC COURIER MANAGEMENT SYSTEM');
-  print('Please enter your username & password for login\n');
+  print('\n------------------------------------------------------------');
+  print('               ABC COURIER MANAGEMENT SYSTEM');
+  print('       Please enter your username & password for login');
+  print('------------------------------------------------------------');
   CourierOption courierOption = CourierOption();
   bool loop1=true;
   while(loop1){
