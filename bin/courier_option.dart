@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'add_parcel.dart';
 import 'coverages.dart';
 import 'login_system.dart';
 import 'pickup.dart';
@@ -7,11 +8,12 @@ class CourierOption extends Login{
   void selectoption(){
     PickUp pickUp=PickUp();
     Coverages coverages = Coverages();
+    AddParcel addParcel = AddParcel();
     String number;
     bool loop=true;
     while(loop){
       print('------------------------------------------------------------');
-      print("               *** Welcome To DASHBOARD ***");
+      print("              *** Welcome To DASHBOARD ***");
       print('                   Select One Option \n'
           '------------------------------------------------------------\n'
           '                   1. PickUp \n'
@@ -32,7 +34,7 @@ class CourierOption extends Login{
         case '3':print('Fraud Check ');
           loop=true;
           break;
-        case '4':print('Add Parcel');
+        case '4':addParcel.addparcel();
           loop=true;
           break;
         case '5':exit(0);
