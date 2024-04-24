@@ -9,7 +9,9 @@ class RegularPickUpRequest{
     print('                      Pickup Address:');
     print('------------------------------------------------------------');
     String address = stdin.readLineSync()!;
-    print('$address \t"*** Pickup Request Send Successfully ***"');
+    print('------------------------------------------------------------');
+    print('\t\t\t\t\t\t$address \t\n\t\t*** Pickup Request Send Successfully ***');
+    print('------------------------------------------------------------');
     pickUp.pickupservice();
   }
 }

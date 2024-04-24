@@ -17,21 +17,28 @@ class PaymentRequest{
           '------------------------------------------------------------');
       var number= stdin.readLineSync();
       switch(number){
-        case '1':print('        bKash\t"Payment Request Send Successfully"');
-        print('------------------------------------------------------------');
+        case '1'://bKash
+          print('------------------------------------------------------------');
+          print('\t\t\t\t\t\t bKash \t\n\t\t*** Pickup Request Send Successfully ***');
+          print('------------------------------------------------------------');
         pickUp.pickupservice();
         loop=false;
         break;
-        case '2':print('        Nagad\t"Payment Request Send Successfully"');
-        print('------------------------------------------------------------');
+        case '2'://Nagad
+          print('------------------------------------------------------------');
+          print('\t\t\t\t\t\t Nagad \t\n\t\t*** Pickup Request Send Successfully ***');
+          print('------------------------------------------------------------');
         pickUp.pickupservice();
         loop=false;
         break;
-        case '3':print('        Eastern Bank Ltd-EBL\t"Payment Request Send Successfully"');
-        print('------------------------------------------------------------');
+        case '3'://Eastern Bank Ltd-EBL
+          print('------------------------------------------------------------');
+          print('\t\t\t\t  Eastern Bank Ltd-EBL \t\n\t\t*** Pickup Request Send Successfully ***');
+          print('------------------------------------------------------------');
         pickUp.pickupservice();
         loop=false;
-        default:print ('           WARNIMG Please enter right option');
+        default:print('------------------------------------------------------------');
+          print ('           WARNIMG Please enter right option');
         print('------------------------------------------------------------');
         sleep(Duration(seconds: 5));
       }

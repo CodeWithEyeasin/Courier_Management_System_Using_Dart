@@ -32,7 +32,9 @@ class PickUp extends CourierOption{
         case '4':selectoption();
         break;
         case '5':exit(0);
-        default: print('WARNING Please Enter Right Option');
+        default: print('\n------------------------------------------------------------');
+          print('\t\t\tWARNING Please Enter Right Option');
+        print('------------------------------------------------------------');
         sleep(Duration(seconds: 5));
       }
     }
